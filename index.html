@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="saldo">Saldo saat ini: Rp.0</h1>
+      <div class="btn">
+        <button onclick="tambahSaldo()">Tambahkan Saldo</button>
+        <button onclick="kurangiSaldo()">Kurangi Saldo</button>
+        <button onclick="hapusSaldo()">Hapus Saldo</button>
+      </div>
+
+      <div>
+        <h2>Riwayat transaksi</h2>
+        <div class="transaction">
+          <p id="empty">Belum ada transaksi</p>
+          <ul id="riwayat-transaksi"></ul>
+        </div>
+      </div>
+      <div class="copyright">© 2024 - Aliffiah Siti Ratuajeng</div>
+    </div>
+    <script src="bank_account.js"></script>
+  </body>
+</html>
